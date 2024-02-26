@@ -17,7 +17,7 @@ function HorizontalTeamCard({ image, name, website }) {
           <MKBox p={2}>
             <MKTypography variant="h6">{name}</MKTypography>
             <MKTypography variant="body2" color="text">
-            <a href={website} style={{ color: "#007bff", textDecoration: "none" }}>Visit Website</a>
+              <a href={website} style={{ color: "#007bff", textDecoration: "none" }}>Visit Website</a>
             </MKTypography>
           </MKBox>
         </Grid>
@@ -30,7 +30,7 @@ function HorizontalTeamCard({ image, name, website }) {
 HorizontalTeamCard.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  website: PropTypes.string.isRequired, // Add prop validation for "website"
 };
 
 export default HorizontalTeamCard;
