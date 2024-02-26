@@ -1,3 +1,4 @@
+import Container from 'assets/theme/components/container';
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
@@ -11,6 +12,8 @@ const NativePopulationBarGraph = () => {
   ];
 
   return (
+    <MKBox>
+      <Container>
     <div>
       <h1 style={{ textAlign: 'center' }}>% of the Native Population in Each State</h1>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -66,6 +69,8 @@ const NativePopulationBarGraph = () => {
       <p style={{ marginTop: '20px' }}>Over half (50.9%) of the American Indian alone population lived in five states.
        <br></br>*data taken from <a href="https://www.census.gov/library/stories/2023/10/2020-census-dhc-a-aian-population.html">https://www.census.gov/library/stories/2023/10/2020-census-dhc-a-aian-population.html</a></p>
     </div>
+    </Container>
+    </MKBox>
   );
 };
 
