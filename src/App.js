@@ -4,7 +4,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import NativeTribes from "./NativeTribes/index";
-import PagenotFound from "./NativeTribes/PgNotFound";
 
 function App() {
   const { pathname } = useLocation();
