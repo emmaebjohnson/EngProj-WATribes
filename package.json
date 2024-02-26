@@ -13,6 +13,7 @@
     "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
   },
   "dependencies": {
+    "@babel/plugin-transform-class-properties": "^7.23.3",
     "@emotion/cache": "11.10.7",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
@@ -72,7 +73,6 @@
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "prettier": "2.8.7"
+    "eslint-plugin-react-hooks": "4.6.0"
   }
 }
