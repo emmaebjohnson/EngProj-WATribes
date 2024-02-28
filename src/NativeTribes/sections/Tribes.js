@@ -313,6 +313,7 @@ function Tribes() {
                   address={item.address}
                   county={item.county}
                   website={item.description}
+                  alt="Tribe Info" //Alt text
                 />
               </MKBox>
             </Grid>

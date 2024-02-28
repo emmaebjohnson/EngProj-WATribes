@@ -1,6 +1,7 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import './Featuring.css'
+import MKTypography from 'components/MKTypography';
 const NativePopulationBarGraph = () => {
   const America = [
     { name: 'OK', percentage: 14.2 },
@@ -26,7 +27,17 @@ const NativePopulationBarGraph = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: 'center' }}>% of the Native Population in Each State</h1>
+      <MKTypography
+              variant="h1"
+              color="black"
+              textAlign = 'center'
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["2xl"],
+                },
+              })}
+            > Percent of the Native Population in Each State</MKTypography>
+            <br></br>
       <div className="chart-container">
         <div className="chart">
           <h2 style={{ textAlign: 'center' }}>American Indian</h2>
@@ -77,8 +88,10 @@ const NativePopulationBarGraph = () => {
           </ResponsiveContainer>
         </div>
       </div>
-      <p style={{ marginTop: '20px' }}>Over half (50.9%) of the American Indian alone population lived in five states.
-       <br></br>*data taken from <a href="https://www.census.gov/library/stories/2023/10/2020-census-dhc-a-aian-population.html">https://www.census.gov/library/stories/2023/10/2020-census-dhc-a-aian-population.html</a></p>
+      
+       <MKTypography variant="h3" color="black" align="center" opacity={0.8} mt={1} mb={3} style={{ marginTop: '20px' }}>
+       Over half (50.9%) of the American Indian alone population lived in five states.
+      </MKTypography>
     </div>
   );
 };

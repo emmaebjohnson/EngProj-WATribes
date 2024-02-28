@@ -27,6 +27,7 @@ import MKButton from "components/MKButton";
 import Map from "./sections/Map";
 import Tribes from "./sections/Tribes";
 import NativePopulationBarGraph from "./sections/Featuring";
+import Footer from "./sections/Footer";
 
 // Images
 import bgImage from "assets/images/bg-about-us.jpg";
@@ -105,6 +106,7 @@ function NativeTribes() {
         <Map />
         <Tribes />
         <NativePopulationBarGraph />
+        <Footer/>
       </Card>
     </>
   );

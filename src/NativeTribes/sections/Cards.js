@@ -4,13 +4,13 @@ import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function HorizontalTeamCard({ image, name, website }) {
+function HorizontalTeamCard({ image, name, website, alt }) {
   return (
     <Card sx={{ p: 2, height: "100%", display: "flex" }}>
       <Grid container alignItems="center" sx={{ height: "100%" }}>
         <Grid item xs={12} md={6} lg={6}>
           <MKBox display="flex" justifyContent="flex-start">
-            <img src={image} alt={name} style={{ maxWidth: "100%", height: "auto" }} />
+            <img src={image} alt={alt} style={{ maxWidth: "100%", height: "auto" }} />
           </MKBox>
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
