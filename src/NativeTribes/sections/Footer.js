@@ -53,7 +53,7 @@ function Footer() {
           href="https://goia.wa.gov/tribal-directory/federally-recognized-indian-tribes-washington-state"
           className="reference-link"
         >
-          Governor's Office of Indian Affairs. (n.d.). Federally Recognized Indian Tribes in Washington State. Retrieved from goia.wa.gov: https://goia.wa.gov/tribal-directory/federally-recognized-indian-tribes-washington-state
+          Governor&apos;s Office of Indian Affairs. (n.d.). Federally Recognized Indian Tribes in Washington State. Retrieved from goia.wa.gov: https://goia.wa.gov/tribal-directory/federally-recognized-indian-tribes-washington-state
         </MKTypography>
         <MKTypography
           component="a"
