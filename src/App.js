@@ -19,7 +19,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Routes>
-        <Route path="/nativetribes" element={<NativeTribes />} />
+        <Route path="/" element={<NativeTribes />} />
         <Route path="*" element={<Navigate to="/nativetribes" />} />
       </Routes>
     </ThemeProvider>
