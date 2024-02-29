@@ -28,7 +28,7 @@ const NativePopulationBarGraph = () => {
   return (
     <div>
       <MKTypography
-              variant="h1"
+              variant="h2"
               color="black"
               textAlign = 'center'
               sx={({ breakpoints, typography: { size } }) => ({
@@ -37,6 +37,10 @@ const NativePopulationBarGraph = () => {
                 },
               })}
             > Percent of the Native Population in Each State</MKTypography>
+            <MKTypography variant="body1" color="black" align="center" opacity={0.8} mt={1} mb={3} style={{ marginTop: '20px' }}>
+       <b>Over half (50.9%) of the American Indian population lived in five states. </b>
+       <br></br>Explore the top five states with the highest populations for each subset of the Native American population
+      </MKTypography>
             <br></br>
       <div className="chart-container">
         <div className="chart">
@@ -88,10 +92,6 @@ const NativePopulationBarGraph = () => {
           </ResponsiveContainer>
         </div>
       </div>
-      
-       <MKTypography variant="h3" color="black" align="center" opacity={0.8} mt={1} mb={3} style={{ marginTop: '20px' }}>
-       Over half (50.9%) of the American Indian alone population lived in five states.
-      </MKTypography>
     </div>
   );
 };

@@ -19,7 +19,7 @@ import Grid from "@mui/material/Grid";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-
+import MKTypography from 'components/MKTypography';
 // Material Kit 2 React examples
 import HorizontalTeamCard from "./Cards";
 
@@ -302,7 +302,19 @@ function Tribes() {
       px={{ xs: 2, lg: 0 }}
       mx={-2}
     >
+      <MKTypography
+              variant="h3"
+              color="white"
+              textAlign = 'center'
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["m"],
+                },
+              })}
+
+            >Learn More About the Federally Recognized Tribes Near You!</MKTypography>
       <Container>
+        <br></br>
         <Grid container spacing={3}>
           {tribeData.map((item, index) => (
             <Grid item xs={12} lg={3} key={index}>
@@ -319,6 +331,9 @@ function Tribes() {
           ))}
         </Grid>
       </Container>
+      <div align= "center"><br></br>
+      <MKTypography component="a" variant="body1" color="white" align="center" href="https://www.washingtontribes.org/the-tribes-of-washington/" opacity={0.8} mt={1} mb={3} style={{ marginTop: '20px' }}>
+        Click to learn more about Washington's tribes</MKTypography></div>
     </MKBox>
     <img
         src={bannerImage}
