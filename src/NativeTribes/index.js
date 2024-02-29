@@ -83,7 +83,7 @@ function NativeTribes() {
                 },
               })}
             >
-              WA Cities Indigenous Names
+              WA Cities with Indigenous Names
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
             This site provides a fascinating insight into the rich history of Washington State by showcasing the origins of city names derived from local tribes.
