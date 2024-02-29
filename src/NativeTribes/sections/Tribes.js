@@ -331,9 +331,9 @@ function Tribes() {
           ))}
         </Grid>
       </Container>
-      <div align= "center"><br></br>
+      <div><br></br>
       <MKTypography component="a" variant="body1" color="white" align="center" href="https://www.washingtontribes.org/the-tribes-of-washington/" opacity={0.8} mt={1} mb={3} style={{ marginTop: '20px' }}>
-        Click to learn more about Washington's tribes</MKTypography></div>
+        Click to learn more about Washington&apos;s tribes</MKTypography></div>
     </MKBox>
     <img
         src={bannerImage}
